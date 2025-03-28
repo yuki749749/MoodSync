@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yuki7/Documents/GitHub/MoodSync/Components/MoodButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb29kQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yuki7/Documents/GitHub/MoodSync/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

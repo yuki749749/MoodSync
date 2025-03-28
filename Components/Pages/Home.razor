@@ -1,5 +1,10 @@
 ﻿@page "/"
+@using MoodSync.Components
 <PageTitle>MoodSync</PageTitle>
-<h1>Welcome to MoodSync</h1>
-<p>Track your mood with ease!</p>
-<p>This MoodSync first project</p>
+
+<h1>Log Your Mood</h1>
+<div class="mood-container">
+    <MoodButton MoodText="Happy" MoodEmoji="😊" Color="lightgreen" />
+    <MoodButton MoodText="Neutral" MoodEmoji="😐" Color="lightgray" />
+    <MoodButton MoodText="Sad" MoodEmoji="😞" Color="lightblue" />
+</div>

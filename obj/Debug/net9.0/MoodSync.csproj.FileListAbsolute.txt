@@ -16,7 +16,6 @@ C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\scopedcss\Components\L
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\scopedcss\bundle\MoodSync.styles.css
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\scopedcss\projectbundle\MoodSync.bundle.scp.css
-C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\compressed\crj3rmqw00-khy4lop6wu.gz
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\compressed\afdgssq2tx-bqjiyaj88i.gz
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\compressed\vh06d6wo3v-c2jlpeoesf.gz
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\compressed\orz4gw8umv-erw9l3u2r3.gz
@@ -77,3 +76,5 @@ C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\refint\MoodSync.dll
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\MoodSync.pdb
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\MoodSync.genruntimeconfig.cache
 C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\ref\MoodSync.dll
+C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\MoodSync.sourcelink.json
+C:\Users\yuki7\Documents\GitHub\MoodSync\obj\Debug\net9.0\compressed\crj3rmqw00-biex6ijobb.gz

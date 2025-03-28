@@ -1,0 +1,31 @@
+﻿<button class="mood-button" style="@ButtonStyle" @onclick="OnMoodSelected">
+    @MoodEmoji @MoodText
+</button>
+
+@if (showConfirmation)
+{
+    <p class="confirmation">Mood logged!</p>
+}
+
+@code {
+    [Parameter]
+    public string MoodText { get; set; } = "Mood";
+
+    [Parameter]
+    public string MoodEmoji { get; set; } = "😊";
+
+    [Parameter]
+    public string Color { get; set; } = "gray";
+
+    private string ButtonStyle => $"background-color: {Color};";
+    private bool showConfirmation = false;
+
+    private async Task OnMoodSelected()
+    {
+        Console.WriteLine("Button clicked: " + MoodText);
+        showConfirmation = true;
+        await Task.Delay(2000); // 2 seconds per FR3
+        showConfirmation = false;
+        Console.WriteLine("Confirmation hidden: " + MoodText);
+    }
+}

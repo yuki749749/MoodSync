@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oH6Da8zkiKm7FsYPmFdtMO2z7AMe0jfxD+w4fVstTTM=",
+  "Hash": "/+NG1JAZWOy8L4TgdLhKw6/QIdULqpNyhpglCUSqAqM=",
   "Source": "MoodSync",
   "BasePath": "_content/MoodSync",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\scopedcss\\bundle\\MoodSync.styles.css"
     },
     {
-      "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-khy4lop6wu.gz",
+      "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-biex6ijobb.gz",
       "SourceId": "MoodSync",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/MoodSync",
-      "RelativePath": "app#[.{fingerprint=khy4lop6wu}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=biex6ijobb}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "596e5mu3rg",
-      "Integrity": "KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=",
+      "Fingerprint": "mstgzh83ud",
+      "Integrity": "Kt6oNhHRSqCqj09j1xl6IID+DnIVm82LrPP61yGLq+Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\app.css"
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "khy4lop6wu",
-      "Integrity": "aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=",
+      "Fingerprint": "biex6ijobb",
+      "Integrity": "s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
@@ -2014,13 +2014,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "app.css",
-      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-khy4lop6wu.gz",
+      "Route": "app.biex6ijobb.css",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-biex6ijobb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000636132316"
+          "Quality": "0.000539083558"
         }
       ],
       "ResponseHeaders": [
@@ -2030,19 +2030,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1571"
+          "Value": "1854"
         },
         {
           "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
+          "Value": "\"Kt6oNhHRSqCqj09j1xl6IID+DnIVm82LrPP61yGLq+Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 17:23:30 GMT"
+          "Value": "Fri, 28 Mar 2025 15:05:56 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2058,18 +2058,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "W/\"s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "biex6ijobb"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA="
         }
       ]
     },
     {
-      "Route": "app.css",
+      "Route": "app.biex6ijobb.css",
       "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2079,7 +2087,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2900"
+          "Value": "3570"
         },
         {
           "Name": "Content-Type",
@@ -2087,121 +2095,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "\"s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 17:23:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
-        }
-      ]
-    },
-    {
-      "Route": "app.css.gz",
-      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-khy4lop6wu.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1571"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 17:23:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0="
-        }
-      ]
-    },
-    {
-      "Route": "app.khy4lop6wu.css",
-      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-khy4lop6wu.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000636132316"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1571"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 17:23:30 GMT"
+          "Value": "Fri, 28 Mar 2025 15:05:56 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "biex6ijobb"
         },
         {
           "Name": "label",
@@ -2209,13 +2117,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA="
         }
       ]
     },
     {
-      "Route": "app.khy4lop6wu.css",
-      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\app.css",
+      "Route": "app.biex6ijobb.css.gz",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-biex6ijobb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2224,7 +2132,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2900"
+          "Value": "1854"
         },
         {
           "Name": "Content-Type",
@@ -2232,56 +2140,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "\"Kt6oNhHRSqCqj09j1xl6IID+DnIVm82LrPP61yGLq+Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 17:23:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "khy4lop6wu"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
-        }
-      ]
-    },
-    {
-      "Route": "app.khy4lop6wu.css.gz",
-      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-khy4lop6wu.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1571"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 17:23:30 GMT"
+          "Value": "Fri, 28 Mar 2025 15:05:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2299,7 +2162,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "biex6ijobb"
         },
         {
           "Name": "label",
@@ -2307,7 +2170,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KfTtGgOr4gFqWP6bDC3erwKnY0fchsCFGM8SFQeyGO0="
+          "Value": "sha256-Kt6oNhHRSqCqj09j1xl6IID+DnIVm82LrPP61yGLq+Y="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-biex6ijobb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000539083558"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1854"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kt6oNhHRSqCqj09j1xl6IID+DnIVm82LrPP61yGLq+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 15:05:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 15:05:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s0XMAxj7mbU5WVROJuwdeMK4/nxGyKznu9e/ENa0niA="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\crj3rmqw00-biex6ijobb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kt6oNhHRSqCqj09j1xl6IID+DnIVm82LrPP61yGLq+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 15:05:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kt6oNhHRSqCqj09j1xl6IID+DnIVm82LrPP61yGLq+Y="
         }
       ]
     },

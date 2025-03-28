@@ -58,3 +58,38 @@ h1:focus {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.mood-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.mood-button {
+    width: 100%;
+    min-height: 100px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.mood-button:hover {
+    transform: scale(1.05);
+}
+
+.mood-button:active {
+    transform: scale(0.95);
+}
+
+.confirmation {
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
