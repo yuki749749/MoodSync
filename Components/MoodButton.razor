@@ -1,4 +1,7 @@
-﻿<button class="mood-button" style="@ButtonStyle" @onclick="OnMoodSelected">
+﻿@using MoodSync.Data  
+@inject MoodSyncContext DbContext  
+
+<button class="mood-button" style="@ButtonStyle" @onclick="OnMoodSelected">
     @MoodEmoji @MoodText
 </button>
 
@@ -22,10 +25,22 @@
 
     private async Task OnMoodSelected()
     {
-        Console.WriteLine("Button clicked: " + MoodText);
+        // Save to database
+        var entry = new MoodSync.Models.MoodEntry
+        {
+            Mood = MoodText,
+            Timestamp = DateTime.Now
+        };
+        try {
+            DbContext.MoodEntries.Add(entry);
+            await DbContext.SaveChangesAsync();
+        } catch (Exception ex) {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+        // Show confirmation
         showConfirmation = true;
-        await Task.Delay(2000); // 2 seconds per FR3
+        await Task.Delay(2000);
         showConfirmation = false;
-        Console.WriteLine("Confirmation hidden: " + MoodText);
     }
 }

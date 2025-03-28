@@ -1,10 +1,15 @@
 using MoodSync.Components;
+using MoodSync.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddDbContext<MoodSyncContext>(options =>
+    options.UseSqlite("Data Source=moodsync.db"));
 
 var app = builder.Build();
 
