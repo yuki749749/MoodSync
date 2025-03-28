@@ -1,0 +1,57 @@
+﻿@page "/moodhistory"
+@using MoodSync.Data
+@inject MoodSyncContext DbContext
+@inject IJSRuntime JS
+
+<PageTitle>Mood History</PageTitle>
+<h1>Mood History</h1>
+<div>
+    <canvas id="moodChart" width="400" height="200"></canvas>
+</div>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <p style="color: red;">@errorMessage</p>
+}
+
+@code {
+    private string errorMessage = null;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Check if Chart.js is loaded
+            var isChartLoaded = await JS.InvokeAsync<bool>("eval", "typeof Chart !== 'undefined'");
+            if (isChartLoaded)
+            {
+                await LoadMoodData();
+            }
+            else
+            {
+                errorMessage = "Chart.js failed to load. Please refresh the page.";
+                StateHasChanged();
+            }
+        }
+    }
+
+    private async Task LoadMoodData()
+    {
+        var entries = DbContext.MoodEntries
+            .OrderByDescending(e => e.Timestamp)
+            .Take(7)
+            .OrderBy(e => e.Timestamp)
+            .ToList();
+
+        var labels = entries.Select(e => e.Timestamp.ToString("MM/dd HH:mm")).ToArray();
+        var data = entries.Select(e => e.Mood switch
+        {
+            "Happy" => 3,
+            "Neutral" => 2,
+            "Sad" => 1,
+            _ => 0
+        }).ToArray();
+
+        await JS.InvokeVoidAsync("drawMoodChart", "moodChart", labels, data);
+    }
+}

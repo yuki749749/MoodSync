@@ -31,3 +31,19 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 app.Run();
+
+app.UseStaticFiles();
+app.UseRouting();
+
+app.Use(async (context, next) =>
+{
+    await next.Invoke();
+    if (context.Response.ContentType?.Contains("text/html") == true)
+    {
+        await context.Response.WriteAsync("<script src='https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.min.js'></script>");
+        await context.Response.WriteAsync("<script src='/js/chartInterop.js'></script>");
+    }
+});
+
+app.MapRazorComponents<App>()
+   .AddInteractiveServerRenderMode();

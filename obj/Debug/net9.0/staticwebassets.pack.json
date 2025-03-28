@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\js\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chartInterop.js",
+      "PackagePath": "staticwebassets\\js\\chartInterop.js"
+    },
+    {
       "Id": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },

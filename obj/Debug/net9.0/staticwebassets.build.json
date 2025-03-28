@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qcB7BlSA6ORV+JSoTW0Y1WPVJNyMLL4bYE39wVzXUf4=",
+  "Hash": "Y1MQLVMp9MrOLW7UvP2zu9rb9znnDWqmQg0euMZjCDk=",
   "Source": "MoodSync",
   "BasePath": "_content/MoodSync",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\09jd2qp4c9-5nihmuzz2v.gz",
+      "SourceId": "MoodSync",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/MoodSync",
+      "RelativePath": "js/chartInterop#[.{fingerprint=5nihmuzz2v}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chartInterop.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "aq59q0fwie",
+      "Integrity": "vjAb0eEX55C1/q9eSy9DlpAl0j4eCDk3OMA6yONYejM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chartInterop.js"
+    },
     {
       "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\0gwm3bsf3p-khv3u5hwcm.gz",
       "SourceId": "MoodSync",
@@ -372,6 +393,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\eez1aa66ux-f5hzav5u7i.gz",
+      "SourceId": "MoodSync",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/MoodSync",
+      "RelativePath": "js/chart.min#[.{fingerprint=f5hzav5u7i}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chart.min.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "yi2konb0lm",
+      "Integrity": "ys18NU7oeUhLx3P3pht/ZPc8O70NSOBF8SnqxR8Nw8M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chart.min.js"
     },
     {
       "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\efixm36dkx-tdbxkamptv.gz",
@@ -1086,6 +1128,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chart.min.js",
+      "SourceId": "MoodSync",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\",
+      "BasePath": "_content/MoodSync",
+      "RelativePath": "js/chart.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f5hzav5u7i",
+      "Integrity": "bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chart.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chartInterop.js",
+      "SourceId": "MoodSync",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\",
+      "BasePath": "_content/MoodSync",
+      "RelativePath": "js/chartInterop#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5nihmuzz2v",
+      "Integrity": "oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chartInterop.js"
     },
     {
       "Identity": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -2390,6 +2474,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.min.f5hzav5u7i.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\eez1aa66ux-f5hzav5u7i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000017227122"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58047"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ys18NU7oeUhLx3P3pht/ZPc8O70NSOBF8SnqxR8Nw8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f5hzav5u7i"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chart.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.min.f5hzav5u7i.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chart.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f5hzav5u7i"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chart.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.min.f5hzav5u7i.js.gz",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\eez1aa66ux-f5hzav5u7i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ys18NU7oeUhLx3P3pht/ZPc8O70NSOBF8SnqxR8Nw8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f5hzav5u7i"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chart.min.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ys18NU7oeUhLx3P3pht/ZPc8O70NSOBF8SnqxR8Nw8M="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.min.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\eez1aa66ux-f5hzav5u7i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000017227122"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58047"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ys18NU7oeUhLx3P3pht/ZPc8O70NSOBF8SnqxR8Nw8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.min.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chart.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bcgmS/e0LdDtXWZYA+JJf5xjXESi3ko8PhkFpU7eFOY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.min.js.gz",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\eez1aa66ux-f5hzav5u7i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ys18NU7oeUhLx3P3pht/ZPc8O70NSOBF8SnqxR8Nw8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ys18NU7oeUhLx3P3pht/ZPc8O70NSOBF8SnqxR8Nw8M="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartInterop.5nihmuzz2v.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\09jd2qp4c9-5nihmuzz2v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003205128205"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vjAb0eEX55C1/q9eSy9DlpAl0j4eCDk3OMA6yONYejM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5nihmuzz2v"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chartInterop.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartInterop.5nihmuzz2v.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chartInterop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5nihmuzz2v"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chartInterop.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartInterop.5nihmuzz2v.js.gz",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\09jd2qp4c9-5nihmuzz2v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vjAb0eEX55C1/q9eSy9DlpAl0j4eCDk3OMA6yONYejM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5nihmuzz2v"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chartInterop.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vjAb0eEX55C1/q9eSy9DlpAl0j4eCDk3OMA6yONYejM="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartInterop.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\09jd2qp4c9-5nihmuzz2v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003205128205"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vjAb0eEX55C1/q9eSy9DlpAl0j4eCDk3OMA6yONYejM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartInterop.js",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\wwwroot\\js\\chartInterop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oXZvNVb83flTbPJO5zIWwpBWkjP3TAHBbMLDyyhH4T0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartInterop.js.gz",
+      "AssetFile": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\compressed\\09jd2qp4c9-5nihmuzz2v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vjAb0eEX55C1/q9eSy9DlpAl0j4eCDk3OMA6yONYejM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Mar 2025 16:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vjAb0eEX55C1/q9eSy9DlpAl0j4eCDk3OMA6yONYejM="
         }
       ]
     },
