@@ -21,18 +21,52 @@
     {
         if (firstRender)
         {
-            // Check if Chart.js is loaded
-            var isChartLoaded = await JS.InvokeAsync<bool>("eval", "typeof Chart !== 'undefined'");
-            if (isChartLoaded)
+            await JS.InvokeVoidAsync("eval", @"
+                var script1 = document.createElement('script');
+                script1.src = '/js/chart.min.js';
+                script1.onload = () => console.log('Chart.js loaded');
+                script1.onerror = (e) => console.log('Chart.js load failed: ' + e.message);
+                document.head.appendChild(script1);
+            ");
+
+            await JS.InvokeVoidAsync("eval", @"
+                var script2 = document.createElement('script');
+                script2.src = '/js/chartInterop.js';
+                script2.onload = () => console.log('chartInterop.js loaded');
+                script2.onerror = (e) => console.log('chartInterop.js load failed: ' + e.message);
+                document.head.appendChild(script2);
+            ");
+
+            await WaitForChartJs();
+            if (string.IsNullOrEmpty(errorMessage))
             {
                 await LoadMoodData();
             }
-            else
-            {
-                errorMessage = "Chart.js failed to load. Please refresh the page.";
-                StateHasChanged();
-            }
         }
+    }
+
+    private async Task WaitForChartJs()
+    {
+        for (int i = 0; i < 50; i++)
+        {
+            try
+            {
+                var isChartLoaded = await JS.InvokeAsync<bool>("eval", "typeof Chart !== 'undefined'");
+                Console.WriteLine($"Attempt {i + 1}: Chart defined = {isChartLoaded}");
+                if (isChartLoaded)
+                {
+                    Console.WriteLine("Chart.js detected as loaded");
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Attempt {i + 1} error: {ex.Message}");
+            }
+            await Task.Delay(100);
+        }
+        errorMessage = "Chart.js failed to load after 5 seconds. Please refresh.";
+        StateHasChanged();
     }
 
     private async Task LoadMoodData()
