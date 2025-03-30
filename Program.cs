@@ -1,13 +1,14 @@
 using MoodSync.Components;
 using MoodSync.Data;
 using Microsoft.EntityFrameworkCore;
+using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
+builder.Services.AddRadzenComponents();
 builder.Services.AddDbContext<MoodSyncContext>(options =>
     options.UseSqlite("Data Source=moodsync.db"));
 
@@ -22,18 +23,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-
-app.UseAntiforgery();
-
-app.MapStaticAssets();
-app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
-
-app.Run();
-
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAntiforgery();
 
 app.Use(async (context, next) =>
 {
@@ -45,5 +37,8 @@ app.Use(async (context, next) =>
     }
 });
 
+app.MapStaticAssets();
 app.MapRazorComponents<App>()
-   .AddInteractiveServerRenderMode();
+    .AddInteractiveServerRenderMode();
+
+app.Run();

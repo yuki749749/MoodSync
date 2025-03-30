@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\yuki7\\.nuget\\packages\\chartjs.blazor.fork\\2.0.2\\contentFiles\\any\\netstandard2.1\\wwwroot\\ChartJsBlazorInterop.js",
+      "PackagePath": "staticwebassets\\ChartJsBlazorInterop.js"
+    },
+    {
       "Id": "C:\\Users\\yuki7\\Documents\\GitHub\\MoodSync\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MoodSync.bundle.scp.css",
       "PackagePath": "staticwebassets\\MoodSync.8zid2mogjo.bundle.scp.css"
     },

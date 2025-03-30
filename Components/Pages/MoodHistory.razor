@@ -1,75 +1,36 @@
 ﻿@page "/moodhistory"
 @using MoodSync.Data
+@using Radzen.Blazor
 @inject MoodSyncContext DbContext
-@inject IJSRuntime JS
 
 <PageTitle>Mood History</PageTitle>
 <h1>Mood History</h1>
-<div>
-    <canvas id="moodChart" width="400" height="200"></canvas>
+
+<div style="width: 100%; max-width: 600px; margin: 0 auto;">
+    <RadzenChart>
+        <RadzenLineSeries Data="@moodData" CategoryProperty="Date" Title="Mood" ValueProperty="Value" Smooth="true">
+            <RadzenMarkers MarkerType="MarkerType.Circle" />
+        </RadzenLineSeries>
+        <RadzenValueAxis Min="0" Max="3" Step="1" />
+        <RadzenCategoryAxis Padding="20" />
+    </RadzenChart>
 </div>
 
-@if (!string.IsNullOrEmpty(errorMessage))
-{
-    <p style="color: red;">@errorMessage</p>
-}
-
 @code {
-    private string errorMessage = null;
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    class MoodDataPoint
     {
-        if (firstRender)
-        {
-            await JS.InvokeVoidAsync("eval", @"
-                var script1 = document.createElement('script');
-                script1.src = '/js/chart.min.js';
-                script1.onload = () => console.log('Chart.js loaded');
-                script1.onerror = (e) => console.log('Chart.js load failed: ' + e.message);
-                document.head.appendChild(script1);
-            ");
-
-            await JS.InvokeVoidAsync("eval", @"
-                var script2 = document.createElement('script');
-                script2.src = '/js/chartInterop.js';
-                script2.onload = () => console.log('chartInterop.js loaded');
-                script2.onerror = (e) => console.log('chartInterop.js load failed: ' + e.message);
-                document.head.appendChild(script2);
-            ");
-
-            await WaitForChartJs();
-            if (string.IsNullOrEmpty(errorMessage))
-            {
-                await LoadMoodData();
-            }
-        }
+        public string Date { get; set; }
+        public int Value { get; set; }
     }
 
-    private async Task WaitForChartJs()
+    private List<MoodDataPoint> moodData = new List<MoodDataPoint>();
+
+    protected override void OnInitialized()
     {
-        for (int i = 0; i < 50; i++)
-        {
-            try
-            {
-                var isChartLoaded = await JS.InvokeAsync<bool>("eval", "typeof Chart !== 'undefined'");
-                Console.WriteLine($"Attempt {i + 1}: Chart defined = {isChartLoaded}");
-                if (isChartLoaded)
-                {
-                    Console.WriteLine("Chart.js detected as loaded");
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Attempt {i + 1} error: {ex.Message}");
-            }
-            await Task.Delay(100);
-        }
-        errorMessage = "Chart.js failed to load after 5 seconds. Please refresh.";
-        StateHasChanged();
+        LoadMoodData();
     }
 
-    private async Task LoadMoodData()
+    private void LoadMoodData()
     {
         var entries = DbContext.MoodEntries
             .OrderByDescending(e => e.Timestamp)
@@ -77,15 +38,21 @@
             .OrderBy(e => e.Timestamp)
             .ToList();
 
-        var labels = entries.Select(e => e.Timestamp.ToString("MM/dd HH:mm")).ToArray();
-        var data = entries.Select(e => e.Mood switch
+        foreach (var entry in entries)
         {
-            "Happy" => 3,
-            "Neutral" => 2,
-            "Sad" => 1,
-            _ => 0
-        }).ToArray();
-
-        await JS.InvokeVoidAsync("drawMoodChart", "moodChart", labels, data);
+            int value = entry.Mood switch
+            {
+                "Happy" => 3,
+                "Neutral" => 2,
+                "Sad" => 1,
+                _ => 0
+            };
+            
+            moodData.Add(new MoodDataPoint 
+            { 
+                Date = entry.Timestamp.ToString("MM/dd HH:mm"),
+                Value = value
+            });
+        }
     }
 }
