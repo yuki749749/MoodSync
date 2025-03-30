@@ -1,10 +1,55 @@
 ﻿@page "/"
-@using MoodSync.Components
-<PageTitle>MoodSync</PageTitle>
+@using MoodSync.Data
+@using MoodSync.Models
+@inject MoodSyncContext DbContext
 
+
+<PageTitle>MoodSync</PageTitle>
 <h1>Log Your Mood</h1>
 <div class="mood-container">
-    <MoodButton MoodText="Happy" MoodEmoji="😊" Color="lightgreen" />
-    <MoodButton MoodText="Neutral" MoodEmoji="😐" Color="lightgray" />
-    <MoodButton MoodText="Sad" MoodEmoji="😞" Color="lightblue" />
+    @for (int i = 1; i <= 7; i++)
+    {
+        var moodValue = i.ToString();
+        <button class="mood-button" style="@GetButtonStyle(i)" @onclick="() => LogMood(moodValue)">
+            @i
+        </button>
+    }
 </div>
+
+@if (showOverlay)
+{
+    <div class="overlay">
+        <span class="overlay-text">Mood logged</span>
+    </div>
+}
+
+@code {
+    private bool showOverlay = false;
+
+    private string GetButtonStyle(int mood)
+    {
+        string color = mood switch
+        {
+            1 => "#ff4d4d", // Red (lowest)
+            2 => "#ff8c66",
+            3 => "#ffbf80",
+            4 => "#ffd966", // Yellow (neutral)
+            5 => "#b3ff99",
+            6 => "#80ffbf",
+            7 => "#4dff88", // Green (highest)
+            _ => "#d3d3d3"
+        };
+        return $"background-color: {color};";
+    }
+
+    private async Task LogMood(string mood)
+    {
+        var entry = new MoodEntry { Mood = mood, Timestamp = DateTime.Now };
+        DbContext.MoodEntries.Add(entry);
+        await DbContext.SaveChangesAsync();
+
+        showOverlay = true;
+        await Task.Delay(2000);
+        showOverlay = false;
+    }
+}

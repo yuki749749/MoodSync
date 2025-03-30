@@ -1,8 +1,10 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavManager
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
+    <div class="nav-buttons">
+        <button class="mood-button" style="background-color: #007bff;" @onclick="GoToLog">Log Mood</button>
+        <button class="mood-button" style="background-color: #007bff;" @onclick="GoToHistory">Mood History</button>
     </div>
 
     <main>
@@ -25,3 +27,7 @@
     <span class="dismiss">🗙</span>
 </div>
 
+@code {
+    private void GoToLog() => NavManager.NavigateTo("/");
+    private void GoToHistory() => NavManager.NavigateTo("/moodhistory");
+}

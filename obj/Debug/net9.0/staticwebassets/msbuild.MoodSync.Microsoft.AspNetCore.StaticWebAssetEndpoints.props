@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/MoodSync/app.0b734urvxo.css">
+    <StaticWebAssetEndpoint Include="_content/MoodSync/app.5m845jyxqp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0b734urvxo"},{"Name":"integrity","Value":"sha256-RIwGFUR90y3fYZlU8ubo3O9dZYMrHq5tPF1ymt/VUsA="},{"Name":"label","Value":"_content/MoodSync/app.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RIwGFUR90y3fYZlU8ubo3O9dZYMrHq5tPF1ymt/VUsA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Mar 2025 15:13:44 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5m845jyxqp"},{"Name":"integrity","Value":"sha256-Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s="},{"Name":"label","Value":"_content/MoodSync/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1673"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 15:38:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MoodSync/app.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RIwGFUR90y3fYZlU8ubo3O9dZYMrHq5tPF1ymt/VUsA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RIwGFUR90y3fYZlU8ubo3O9dZYMrHq5tPF1ymt/VUsA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Mar 2025 15:13:44 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1673"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 15:38:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MoodSync/ChartJsBlazorInterop.49ox6r4gbs.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ChartJsBlazorInterop.js'))</AssetFile>

@@ -5,13 +5,12 @@
 
 <PageTitle>Mood History</PageTitle>
 <h1>Mood History</h1>
-
-<div style="width: 100%; max-width: 600px; margin: 0 auto;">
+<div class="chart-container">
     <RadzenChart>
-        <RadzenLineSeries Data="@moodData" CategoryProperty="Date" Title="Mood" ValueProperty="Value" Smooth="true">
+        <RadzenLineSeries Data="@moodData" CategoryProperty="Date" Title=" " ValueProperty="Value" Smooth="true" StrokeWidth="0">
             <RadzenMarkers MarkerType="MarkerType.Circle" />
         </RadzenLineSeries>
-        <RadzenValueAxis Min="0" Max="3" Step="1" />
+        <RadzenValueAxis Min="0" Max="7" Step="1" />
         <RadzenCategoryAxis Padding="20" />
     </RadzenChart>
 </div>
@@ -42,9 +41,13 @@
         {
             int value = entry.Mood switch
             {
-                "Happy" => 3,
-                "Neutral" => 2,
-                "Sad" => 1,
+                "7" => 7,
+                "6" => 6,
+                "5" => 5,
+                "4" => 4,
+                "3" => 3,
+                "2" => 2,
+                "1" => 1,
                 _ => 0
             };
             
@@ -54,5 +57,31 @@
                 Value = value
             });
         }
+    }
+
+    private string GetMarkerColor(int value)
+    {
+        return value switch
+        {
+            1 => "#ff4d4d", // Red (lowest)
+            2 => "#ff8c66",
+            3 => "#ffbf80",
+            4 => "#ffd966", // Yellow (neutral)
+            5 => "#b3ff99",
+            6 => "#80ffbf",
+            7 => "#4dff88", // Green (highest)
+            _ => "#d3d3d3"
+        };
+    }
+
+
+
+
+    private async Task RefreshChart()
+    {
+        moodData.Clear();
+        LoadMoodData();
+        StateHasChanged(); // Force re-render
+        await Task.CompletedTask; // For async compatibility
     }
 }
