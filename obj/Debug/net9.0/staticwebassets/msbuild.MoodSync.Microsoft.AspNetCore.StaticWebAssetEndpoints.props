@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/MoodSync/app.5m845jyxqp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5m845jyxqp"},{"Name":"integrity","Value":"sha256-Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s="},{"Name":"label","Value":"_content/MoodSync/app.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1673"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 15:38:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MoodSync/app.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1673"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y0oOPV0xlpqyzFYxlmBvBpXBX8vkOEJ5eOVo4Mtyf5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 15:38:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Zoikvs4eZj3Z\u002BUY\u002BjK1AITD81cjbvaFA0k9HOb\u002Byj4w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1992"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Zoikvs4eZj3Z\u002BUY\u002BjK1AITD81cjbvaFA0k9HOb\u002Byj4w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 31 Mar 2025 19:55:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MoodSync/app.ef70uhhq34.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ef70uhhq34"},{"Name":"integrity","Value":"sha256-Zoikvs4eZj3Z\u002BUY\u002BjK1AITD81cjbvaFA0k9HOb\u002Byj4w="},{"Name":"label","Value":"_content/MoodSync/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1992"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Zoikvs4eZj3Z\u002BUY\u002BjK1AITD81cjbvaFA0k9HOb\u002Byj4w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 31 Mar 2025 19:55:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MoodSync/ChartJsBlazorInterop.49ox6r4gbs.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ChartJsBlazorInterop.js'))</AssetFile>

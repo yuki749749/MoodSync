@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoodSync")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e323bf0556ce5791ceeb64d66770460fffe53d93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe02842b4ab13db31cb643f8b47e501d88618799")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoodSync")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoodSync")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
