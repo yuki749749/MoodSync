@@ -7,18 +7,20 @@
 <h1>Mood History</h1>
 <div class="chart-container">
     <RadzenChart>
-        <RadzenLineSeries Data="@moodData" CategoryProperty="Date" Title="Mood" ValueProperty="Value" Smooth="true" StrokeWidth="0">
+        <RadzenLineSeries Data="@moodData" CategoryProperty="Time" Title="Mood" ValueProperty="Value" Smooth="true" StrokeWidth="0">
             <RadzenMarkers MarkerType="MarkerType.Circle" />
         </RadzenLineSeries>
         <RadzenValueAxis Min="0" Max="7" Step="1" />
         <RadzenCategoryAxis Padding="20" />
+        <RadzenGridLines Stroke="lightgray" StrokeWidth="1" />
+            
     </RadzenChart>
 </div>
 
 @code {
     class MoodDataPoint
     {
-        public string Date { get; set; }
+        public double Time { get; set; }
         public int Value { get; set; }
     }
 
@@ -36,10 +38,14 @@
         var startOfDay = selectedDate.Date;
         var endOfDay = startOfDay.AddDays(1);
 
+
         var entries = DbContext.MoodEntries
             .Where(e => e.Timestamp >= startOfDay && e.Timestamp < endOfDay)
             .OrderBy(e => e.Timestamp)
             .ToList();
+        
+        moodData.Add(new MoodDataPoint { Time = 0.0, Value = 0 });
+        moodData.Add(new MoodDataPoint { Time = 24.0, Value = 0 });
 
         foreach (var entry in entries)
         {
@@ -55,9 +61,11 @@
                 _ => 0
             };
 
+            double hourOfDay = entry.Timestamp.TimeOfDay.TotalHours;
+
             moodData.Add(new MoodDataPoint 
             { 
-                Date = entry.Timestamp.ToString("HH:mm"),
+                Time = hourOfDay,
                 Value = value
             });
         }
